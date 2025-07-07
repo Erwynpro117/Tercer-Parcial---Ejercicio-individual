@@ -1,7 +1,8 @@
 :root {
-    --base: #1C2026;
-    --card-base: #D8E0F2;
-    --font-color-1: #F26363;
+    --base: #215BA6;
+    --highlight: #D2D6D9;
+    --card-base: #577086;
+    --font-color-1: #D2D6D9;
     --font-color-2: #000000;
 
     --padding-n: 1rem;
@@ -16,3 +17,40 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--base);
+}
+
+.container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    align-content: center;
+    max-width: 1440px;
+}
+
+.Primarca-image {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 0%;
+    overflow: hidden;
+    background-color: var(--card-base);
+}
+
+.Primarcas {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow: hidden;
+    max-width: 1200px;
+    background-color: var(--card-base);
+}
